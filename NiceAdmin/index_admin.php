@@ -44,7 +44,7 @@
   <header id="header" class="header fixed-top d-flex align-items-center">
 
     <div class="d-flex align-items-center justify-content-between">
-      <a href="index.php" class="logo d-flex align-items-center">
+      <a href="index_admin.php" class="logo d-flex align-items-center">
         <img src="assets/img/logo.png" alt="">
         <span class="d-none d-lg-block">NiceAdmin</span>
       </a>
@@ -275,7 +275,7 @@
     <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="index.php">
+        <a class="nav-link collapsed" href="index_admin.php">
           <i class="bi bi-grid"></i>
           <span>Dashboard</span>
         </a>
@@ -393,12 +393,12 @@
         </a>
         <ul id="tables-nav" class="nav-content collapse show" data-bs-parent="#sidebar-nav">
           <li>
-            <a href="index.php?page=Registration_form">
+            <a href="index_admin.php?page=Registration_form">
               <i class="bi bi-circle"></i><span>Rgistration Form</span>
             </a>
           </li>
           <li>
-            <a href="index.php?page=application_form" class="active">
+            <a href="index_admin.php?page=application_form" class="active">
               <i class="bi bi-circle"></i><span>Application Form</span>
             </a>
           </li>
@@ -454,49 +454,49 @@
       <li class="nav-heading">Pages</li>
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="index.php?page=profile">
+        <a class="nav-link collapsed" href="index_admin.php?page=profile">
           <i class="bi bi-person"></i>
           <span>Profile</span>
         </a>
       </li><!-- End Profile Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="index.php?page=London">
+        <a class="nav-link collapsed" href="index_admin.php?page=London">
           <i class="bi bi-question-circle"></i>
           <span>London</span>
         </a>
       </li><!-- End F.A.Q Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="index.php?page=Paris">
+        <a class="nav-link collapsed" href="index_admin.php?page=Paris">
           <i class="bi bi-envelope"></i>
           <span>paris</span>
         </a>
       </li><!-- End Contact Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="index.php?page=Tokyo">
+        <a class="nav-link collapsed" href="index_admin.php?page=Tokyo">
           <i class="bi bi-card-list"></i>
           <span>Tokyo</span>
         </a>
       </li><!-- End Register Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="index.php?page=login">
+        <a class="nav-link collapsed" href="index_admin.php?page=login">
           <i class="bi bi-box-arrow-in-right"></i>
           <span>Login</span>
         </a>
       </li><!-- End Login Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="index.php?page=error">
+        <a class="nav-link collapsed" href="index_admin.php?page=error">
           <i class="bi bi-dash-circle"></i>
           <span>Error 404</span>
         </a>
       </li><!-- End Error 404 Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="index.php?page=blank">
+        <a class="nav-link collapsed" href="index_admin.php?page=blank">
           <i class="bi bi-file-earmark"></i>
           <span>Blank</span>
         </a>
@@ -512,7 +512,7 @@
       <h1>Data Tables</h1>
       <nav>
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+          <li class="breadcrumb-item"><a href="index_admin.php">Home</a></li>
           <li class="breadcrumb-item">Tables</li>
           <li class="breadcrumb-item active">Data</li>
         </ol>
