@@ -261,8 +261,4 @@
                     <div class="text-center">
                       <button type="submit" class="btn btn-primary">Change Password</button>
                     </div>
-                  </form><!-- End Change Password Form -->
-
-                </div>
-
-              </div><!-- 
+                
