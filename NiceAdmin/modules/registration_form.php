@@ -1,45 +1,129 @@
-<h5 class="card-title">Registration Form</h5>
-
-<!-- Floating Labels Form -->
+<!-- Registration Form -->
 <form class="row g-3 needs-validation" novalidate>
-  <!-- Name -->
+  <!-- Personal Information Section -->
   <div class="col-md-12">
+    <h5>Personal Information</h5>
+  </div>
+
+  <div class="col-md-4">
     <div class="form-floating">
-      <input type="text" class="form-control" id="floatingName" placeholder="Your Name" required>
-      <label for="floatingName">Your Name</label>
-      <div class="invalid-feedback">Please enter your name.</div>
+      <input type="text" class="form-control" id="floatingFullName" placeholder="Full Name" required>
+      <label for="floatingFullName">Full Name</label>
+      <div class="invalid-feedback">Please enter your full name.</div>
     </div>
   </div>
 
-  <!-- Email -->
-  <div class="col-md-6">
+  <div class="col-md-4">
+    <label>Gender</label>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="gender" id="genderMale" value="Male" required>
+      <label class="form-check-label" for="genderMale">
+        Male
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="gender" id="genderFemale" value="Female">
+      <label class="form-check-label" for="genderFemale">
+        Female
+      </label>
+    </div>
+    <div class="invalid-feedback">Please select your gender.</div>
+  </div>
+
+  <div class="col-md-4">
     <div class="form-floating">
-      <input type="email" class="form-control" id="floatingEmail" placeholder="Your Email" required>
-      <label for="floatingEmail">Your Email</label>
-      <div class="invalid-feedback">Please enter a valid email address.</div>
+      <input type="date" class="form-control" id="floatingDOB" placeholder="Date of Birth" required>
+      <label for="floatingDOB">Date of Birth</label>
+      <div class="invalid-feedback">Please enter your date of birth.</div>
     </div>
   </div>
 
-  <!-- Password -->
-  <div class="col-md-6">
+  <div class="col-md-4">
     <div class="form-floating">
-      <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required pattern=".{8,}" title="Password must be at least 8 characters long">
-      <label for="floatingPassword">Password</label>
-      <div class="invalid-feedback">Please enter a valid password (min 8 characters).</div>
+      <input type="text" class="form-control" id="floatingPlaceOfBirth" placeholder="Place of Birth" required>
+      <label for="floatingPlaceOfBirth">Place of Birth</label>
+      <div class="invalid-feedback">Please enter your place of birth.</div>
     </div>
   </div>
 
-  <!-- Address -->
-  <div class="col-12">
+  <div class="col-md-4">
     <div class="form-floating">
-      <textarea class="form-control" placeholder="Address" id="floatingTextarea" style="height: 100px;" required></textarea>
-      <label for="floatingTextarea">Address</label>
+      <input type="text" class="form-control" id="floatingReligion" placeholder="Religion" required>
+      <label for="floatingReligion">Religion</label>
+      <div class="invalid-feedback">Please enter your religion.</div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <label>Nationality</label>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="nationality" id="nationalityResident" value="Resident" required>
+      <label class="form-check-label" for="nationalityResident">
+        Resident
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="nationality" id="nationalityNonResident" value="Non Resident">
+      <label class="form-check-label" for="nationalityNonResident">
+        Non-Resident
+      </label>
+    </div>
+    <div class="invalid-feedback">Please select your nationality status.</div>
+  </div>
+
+  <div class="col-md-4">
+    <label>Marital Status</label>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="maritalStatus" id="maritalStatusSingle" value="Single" required>
+      <label class="form-check-label" for="maritalStatusSingle">
+        Single
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="maritalStatus" id="maritalStatusMarried" value="Married">
+      <label class="form-check-label" for="maritalStatusMarried">
+        Married
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="maritalStatus" id="maritalStatusWidowed" value="Widowed">
+      <label class="form-check-label" for="maritalStatusWidowed">
+        Widowed
+      </label>
+    </div>
+    <div class="invalid-feedback">Please select your marital status.</div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="form-floating">
+      <input type="text" class="form-control" id="floatingNationalId" placeholder="National ID" required>
+      <label for="floatingNationalId">National ID</label>
+      <div class="invalid-feedback">Please enter your National ID.</div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="form-floating">
+      <input type="text" class="form-control" id="floatingTinNo" placeholder="TIN No" required>
+      <label for="floatingTinNo">TIN No</label>
+      <div class="invalid-feedback">Please enter your TIN number.</div>
+    </div>
+  </div>
+
+  <!-- Contact Information Section -->
+  <div class="col-md-12">
+    <h5>Contact Information</h5>
+  </div>
+
+  <div class="col-md-4">
+    <div class="form-floating">
+      <textarea class="form-control" id="floatingAddress" placeholder="Address" style="height: 100px;" required></textarea>
+      <label for="floatingAddress">Address</label>
       <div class="invalid-feedback">Please enter your address.</div>
     </div>
   </div>
 
-  <!-- City -->
-  <div class="col-md-6">
+  <div class="col-md-4">
     <div class="form-floating">
       <input type="text" class="form-control" id="floatingCity" placeholder="City" required>
       <label for="floatingCity">City</label>
@@ -47,55 +131,90 @@
     </div>
   </div>
 
-  <!-- State -->
   <div class="col-md-4">
-    <div class="form-floating mb-3">
-      <select class="form-select" id="floatingSelect" aria-label="State" required>
-        <option selected disabled>Choose your state</option>
-        <option value="1">New York</option>
-        <option value="2">Oregon</option>
-        <option value="3">DC</option>
-      </select>
-      <label for="floatingSelect">State</label>
-      <div class="invalid-feedback">Please select your state.</div>
-    </div>
-  </div>
-
-  <!-- Zip -->
-  <div class="col-md-2">
     <div class="form-floating">
-      <input type="text" class="form-control" id="floatingZip" placeholder="Zip" required pattern="\d{5}" title="Zip code should be 5 digits">
-      <label for="floatingZip">Zip</label>
-      <div class="invalid-feedback">Please enter a valid zip code (5 digits).</div>
+      <input type="text" class="form-control" id="floatingState" placeholder="State" required>
+      <label for="floatingState">State</label>
+      <div class="invalid-feedback">Please enter your state.</div>
     </div>
   </div>
 
-  <!-- Terms and Conditions -->
-  <div class="col-12">
+  <div class="col-md-4">
+    <div class="form-floating">
+      <input type="text" class="form-control" id="floatingZip" placeholder="Zip Code" required pattern="\d{5}" title="Zip code should be 5 digits">
+      <label for="floatingZip">Zip Code</label>
+      <div class="invalid-feedback">Please enter your zip code.</div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="form-floating">
+      <input type="text" class="form-control" id="floatingCountry" placeholder="Country" required>
+      <label for="floatingCountry">Country</label>
+      <div class="invalid-feedback">Please enter your country.</div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="form-floating">
+      <input type="email" class="form-control" id="floatingEmail" placeholder="Email" required>
+      <label for="floatingEmail">Email</label>
+      <div class="invalid-feedback">Please enter a valid email address.</div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="form-floating">
+      <input type="tel" class="form-control" id="floatingPhone" placeholder="Phone" required>
+      <label for="floatingPhone">Phone</label>
+      <div class="invalid-feedback">Please enter your phone number.</div>
+    </div>
+  </div>
+
+  <!-- Service Information Section -->
+  <div class="col-md-12">
+    <h5>Service Information</h5>
+  </div>
+
+  <div class="col-md-4">
+    <label>Service Name</label>
     <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="termsCheck" required>
-      <label class="form-check-label" for="termsCheck">
-        I agree to the <a href="#" data-bs-toggle="tooltip" title="Read the terms and conditions">terms and conditions</a>.
+      <input class="form-check-input" type="radio" name="service" id="serviceCash" value="Cash" required>
+      <label class="form-check-label" for="serviceCash">
+        Cash
       </label>
-      <div class="invalid-feedback">You must agree to the terms and conditions to proceed.</div>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="service" id="serviceDebitCard" value="Debit Card">
+      <label class="form-check-label" for="serviceDebitCard">
+        Debit Card
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="service" id="serviceCreditCard" value="Credit Card">
+      <label class="form-check-label" for="serviceCreditCard">
+        Credit Card
+      </label>
     </div>
   </div>
 
-  <!-- Submit Button -->
+  <div class="col-md-4">
+    <div class="form-floating">
+      <input type="text" class="form-control" id="floatingComments" placeholder="Comments" required>
+      <label for="floatingComments">Comments</label>
+      <div class="invalid-feedback">Please enter any comments.</div>
+    </div>
+  </div>
+
+  <!-- Submit and Reset Buttons -->
   <div class="text-center">
     <button type="submit" class="btn btn-primary">Submit</button>
     <button type="reset" class="btn btn-secondary">Reset</button>
   </div>
-</form><!-- End floating Labels Form -->
+</form>
 
 <!-- Script for form validation -->
 <script>
-  // Enable tooltips for terms and conditions
-  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
-  tooltipTriggerList.map(function (tooltipTriggerEl) {
-    return new bootstrap.Tooltip(tooltipTriggerEl);
-  });
-
   // Form Validation
   (function () {
     'use strict'

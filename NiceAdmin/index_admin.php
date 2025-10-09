@@ -476,6 +476,7 @@
 
       <li class="nav-item">
         <a class="nav-link collapsed" href="index_admin.php?page=Tokyo">
+        
           <i class="bi bi-card-list"></i>
           <span>Tokyo</span>
         </a>
